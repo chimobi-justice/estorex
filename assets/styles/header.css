@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #fff;
+    color: #000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.5em;
+    height: 100vh;
+}
+
+#navBar {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+}
+#navBar > .brand-holder {
+    padding: 20px 0px 0px 15px;
+}
+#navBar > .brand-holder > #brand-name {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+}
+#navBar > ul#midside-nav {
+    display: inline-flex;
+    padding-top: 10px;
+    margin-left: 9rem; 
+}
+#navBar > ul#midside-nav li {
+    list-style: none;
+    padding: 10px;
+    margin: 5px;
+}
+#navBar > ul#midside-nav li > a {
+    text-decoration: none;
+    color: #000;
+}
+#navBar > ul#midside-nav li > a:hover {
+    color: rgb(26, 26, 226);
+}
+#navBar > #rightside-nav {
+    padding: 10px 10px 0px 0px;
+}
+#navBar > #rightside-nav > a#cart {
+    border-radius: 50%;
+    border: 1px solid #000;
+    text-decoration: none;
+    color: #000;
+    padding: 10px;
+    margin: 5px;
+}
+#navBar > #rightside-nav > input#search {
+    padding: 10px;
+    border-radius: 25px;
+    outline: none; 
+}
+#navBar > #rightside-nav > button.btn {
+    padding: 12px;
+    background: blue;
+    color: #fff;
+    border-radius: 25px;
+    border: 1px solid blue;
+    font-size: 16px;
+    outline: none; 
+    cursor: pointer;
+}
+#navBar > #rightside-nav > button.btn:hover {
+    background: rgb(26, 26, 226);
+}
+#navBar > #rightside-nav > button.signin {
+    background: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+#navBar > #rightside-nav > button.signin:hover {
+    color: #fff;
+}
+
+/* hambuger */
+#hambuger {
+    display: none;
+    width: 100%;
+}
+#hambuger > div > div#icon_container > #menu_icon {
+    display: block;
+}
+#hambuger > div > div#icon_container > #menu_icon > .icon {
+    width: 30%;
+    height: 0px;
+    margin: 5px;
+    padding-left: 25px;
+    border: 1px solid #000;
+}
+.close_menu_icon {
+    display: none;
+    color: #FFF;
+    font-size: 1.7em;
+    position: relative;
+    top: -5px;
+    right: 5px;
+}
+
+/* queries */
+@media screen and (max-width: 576px) {
+    #navBar {
+        display: none;
+    }
+    #hambuger {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        background: #fff;
+        width: 100%;
+    }
+    #hambuger > #brand_for_mobile_holder a{
+        text-decoration: none;
+        color: #000;
+        font-size: 18px;
+    }
+    #hambuger > div > #ham_wrapper_list {
+        display: none;
+    }
+}

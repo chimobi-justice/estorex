@@ -1,0 +1,104 @@
+#hero-section {
+    background: url(../images/h1_hero.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 550px; 
+    overflow: hidden;  
+}
+#hero-section > .hero-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+    margin: 0px auto;
+    height: auto;
+}
+#hero-section > .hero-wrapper > #hero-holder-img >img {
+    width: 72.3%;
+}
+#hero-section > .hero-wrapper > #hero-content {
+    margin: 5px;
+    padding: 5px;
+    line-height: 2.6em;
+}
+#hero-section > .hero-wrapper > #hero-content > h3.discount {
+    font-size: 30px;
+    margin: 25px;
+    color: #0000ff;
+}
+#hero-section > .hero-wrapper > #hero-content > h1{
+    font-size: 5em;
+    margin: 25px;
+}
+#hero-section > .hero-wrapper > #hero-content > p {
+    font-size: 18px;
+    margin: 25px;
+}
+#hero-section > .hero-wrapper > #hero-content > button {
+    background: #0000ff;
+    color: #fff;
+    border-radius: 50px;
+    border: 1px solid #0000ff;
+    padding: 10px;
+    margin-left: 25px;
+    width: 30%;
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+}
+#hero-section > .hero-wrapper > #hero-content > button:hover {
+    background: #3131eb;
+    transform: translateY(-4px);
+}
+
+/* queries */
+@media screen and (max-width: 576px) {
+    #hero-section {
+        height: auto; 
+        width: 100%;
+        overflow: hidden;  
+    }
+    #hero-section > .hero-wrapper {
+        flex-direction: column;
+        text-align: center;
+
+    }
+    #hero-section > .hero-wrapper > #hero-holder-img >img {
+        width: 80%;
+    }
+    #hero-section > .hero-wrapper > #hero-content {
+        margin: 5px;
+        padding: 5px;
+        line-height: 1.2em;
+    }
+    #hero-section > .hero-wrapper > #hero-content > h3.discount {
+        font-size: 2.5em;
+        margin: 25px;
+        padding: 10px;
+        color: #0000ff;
+    }
+    #hero-section > .hero-wrapper > #hero-content > h1{
+        font-size: 3em;
+        margin: 5px;
+        display: inline;
+    }
+    #hero-section > .hero-wrapper > #hero-content > p {
+        font-size: 20px;
+        margin: 25px;
+    }
+    #hero-section > .hero-wrapper > #hero-content > button {
+        background: #0000ff;
+        color: #fff;
+        border-radius: 50px;
+        border: 1px solid #0000ff;
+        padding: 10px;
+        margin-left: 25px;
+        margin-bottom: 2rem;
+        width: 50%;
+        font-size: 20px;
+        cursor: pointer;
+        outline: none;
+    }
+}

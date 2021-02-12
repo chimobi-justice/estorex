@@ -1,0 +1,63 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #fff;
+    color: #000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.5em;
+}
+#aboutSection {
+    margin-top: 5rem; 
+}
+#aboutSection > h1 {
+    text-align: center;
+}
+#aboutSection > #aboutSectionHolder {
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 35px; 
+    display: flex;
+    justify-content: space-around;
+    line-height: 2.1em;
+}
+#aboutSection > #aboutSectionHolder >#aboutHeading {
+    width: 25%;
+    margin: 10px;
+    padding: 10px;
+}
+#aboutSection > #aboutSectionHolder > #aboutContent {
+    width: 70%;
+    margin: 10px;
+    padding: 10px;
+}
+#about-FAQs {
+    width: 100%;
+    margin: 5rem 0rem 5rem 0rem;
+    padding: 15px;
+    background: #e2e1e130;
+    line-height: 2.1em;
+}
+#about-FAQ-holder {
+    width: 90%;
+    margin: 0px auto;
+}
+#about-FAQs > #about-FAQ-holder > h1 {
+    text-align: center;
+    padding: 25px;
+}
+#about-FAQs > #about-FAQ-holder > div {
+    text-align: center;
+}
+#about-FAQs > #about-FAQ-holder > div > a.about-FAQ-control {
+    color: #000;
+    text-decoration: none;
+    line-height: 6.5em;
+}
+#about-FAQs > #about-FAQ-holder > div > .about-FAQs-content-panel{
+    margin: 15px;
+    display: none;
+    line-height: 1.7em;
+}
