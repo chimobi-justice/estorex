@@ -1,104 +1,154 @@
-#hero-section {
-    background: url(../images/h1_hero.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 550px; 
-    overflow: hidden;  
-}
-#hero-section > .hero-wrapper {
+#heroSection {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: row;
     align-items: center;
-    width: 90%;
-    margin: 0px auto;
     height: auto;
 }
-#hero-section > .hero-wrapper > #hero-holder-img >img {
-    width: 72.3%;
+#heroSection > #img-container {
+    width: 70%;
+    height: auto;
+    background: #f7bfbf;
 }
-#hero-section > .hero-wrapper > #hero-content {
-    margin: 5px;
-    padding: 5px;
-    line-height: 2.6em;
+#heroSection > #img-container > .brand-holder {
+    background: black;
+    padding: 15px;
+    width: 20%;
+    text-align: center;
+    font-size: 2rem;
 }
-#hero-section > .hero-wrapper > #hero-content > h3.discount {
-    font-size: 30px;
-    margin: 25px;
-    color: #0000ff;
-}
-#hero-section > .hero-wrapper > #hero-content > h1{
-    font-size: 5em;
-    margin: 25px;
-}
-#hero-section > .hero-wrapper > #hero-content > p {
-    font-size: 18px;
-    margin: 25px;
-}
-#hero-section > .hero-wrapper > #hero-content > button {
-    background: #0000ff;
+#heroSection > #img-container > .brand-holder > a{
+    text-decoration: none;
     color: #fff;
-    border-radius: 50px;
-    border: 1px solid #0000ff;
-    padding: 10px;
-    margin-left: 25px;
+}
+#heroSection > #img-container > img {
+    width: 100%;
+    height: 500px;
+}
+#heroSection > #heroSection-detail {
     width: 30%;
-    font-size: 20px;
+    height: 300px;
+    position: relative;
+    right: 40px;
+    border: 4px solid #1F1F20;
+}
+#heroSection > #heroSection-detail > div {
+    width: 80%;
+    margin: 3rem auto;
+    padding: 10px;
+    text-align: center;
+}
+#heroSection > #heroSection-detail > div > h3 {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #1F1F20;
+}
+#heroSection > #heroSection-detail > div > #heroSection-product > p:first-child {
+    font-size: 14px;
+    line-height: 1.2em;
+    padding: 10px 0px 10px 0px;
+    color: #1F1F20;
+}
+#heroSection > #heroSection-detail > div > #heroSection-product > p:last-child {
+    font-size: 22px;
+    line-height: 1.2em;
+    padding: 5px 0px 10px 0px;
+    color: #1F1F20;
+}
+#heroSection > #heroSection-detail > div > .herobuttonHolder > a {
+    text-decoration: none;
+    padding: 10px;
+    margin: 2px;
+    font-size: 14px;
+    font-weight: bold;
+    background: #fff;
+    color: #1F1F20;
+    border: 2px solid #000;
+    border-radius: 3px;
     cursor: pointer;
-    outline: none;
 }
-#hero-section > .hero-wrapper > #hero-content > button:hover {
-    background: #3131eb;
-    transform: translateY(-4px);
-}
+#heroSection > #heroSection-detail > div > .herobuttonHolder > a:hover {
+background: #f5f5f5;    
+transition: 2s ease-in-out;
+} 
 
-/* queries */
 @media screen and (max-width: 576px) {
-    #hero-section {
-        height: auto; 
-        width: 100%;
-        overflow: hidden;  
-    }
-    #hero-section > .hero-wrapper {
+    #heroSection {
         flex-direction: column;
-        text-align: center;
-
     }
-    #hero-section > .hero-wrapper > #hero-holder-img >img {
-        width: 80%;
+    #heroSection > #img-container {
+        width: 100%;
+        height: auto;
+        background: #f7bfbf;
     }
-    #hero-section > .hero-wrapper > #hero-content {
-        margin: 5px;
-        padding: 5px;
+    #heroSection > #img-container > img {
+        width: 100%;
+        height: 450px;
+    }
+    #heroSection > #heroSection-detail {
+        width: 70%;
+        height: 300px;
+        position: relative;
+        top: -124px;
+        right: 10px;
+    }
+    #heroSection > #heroSection-detail > div > h3 {
+        font-size: 2em;
+        font-weight: bold;
+        color: #1F1F20;
+    }
+    #heroSection > #heroSection-detail > div > #heroSection-product > p:first-child {
+        font-size: 20px;
         line-height: 1.2em;
+        padding: 10px 0px 10px 0px;
+        color: #1F1F20;
     }
-    #hero-section > .hero-wrapper > #hero-content > h3.discount {
-        font-size: 2.5em;
-        margin: 25px;
+    #heroSection > #heroSection-detail > div > #heroSection-product > p:last-child {
+        font-size: 22px;
+        line-height: 1.2em;
+        padding: 5px 0px 20px 0px;
+        color: #1F1F20;
+    }
+    #heroSection > #heroSection-detail > div > .herobuttonHolder > a {
+        text-decoration: none;
         padding: 10px;
-        color: #0000ff;
-    }
-    #hero-section > .hero-wrapper > #hero-content > h1{
-        font-size: 3em;
-        margin: 5px;
-        display: inline;
-    }
-    #hero-section > .hero-wrapper > #hero-content > p {
-        font-size: 20px;
-        margin: 25px;
-    }
-    #hero-section > .hero-wrapper > #hero-content > button {
-        background: #0000ff;
-        color: #fff;
-        border-radius: 50px;
-        border: 1px solid #0000ff;
-        padding: 10px;
-        margin-left: 25px;
-        margin-bottom: 2rem;
-        width: 50%;
-        font-size: 20px;
+        margin: 2px;
+        font-size: 16px;
+        font-weight: bold;
+        background: #fff;
+        color: #1F1F20;
+        border: 2px solid #000;
+        border-radius: 3px;
         cursor: pointer;
-        outline: none;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    #heroSection > #img-container > img {
+        width: 100%;
+        height: 420px;
+    }
+    #heroSection > #heroSection-detail {
+        width: 90%;
+        height: 300px;
+        position: relative;
+        top: -124px;
+        right: 2px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #heroSection > #img-container > img {
+        width: 100%;
+        height: 350px;
+    }
+    #heroSection > #heroSection-detail > div > h3 {
+       font-size: 1.7rem;
+    }
+    #heroSection > #heroSection-detail > div > #heroSection-product > p:first-child {
+        font-size: 19px;
+        line-height: 1.2em;
+        padding: 10px 0px 10px 0px;
+        color: #1F1F20;
     }
 }

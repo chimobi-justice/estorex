@@ -1,0 +1,247 @@
+#checkout-pay-method-wrapper {
+    width: 90%;
+    margin: 6rem auto;
+    line-height: 1.5em;
+}
+#checkout-pay-method-wrapper > #checkoutFormControl > #checkoutFormHolder {
+    display: flex;
+    justify-content: space-around;
+}   
+#checkout-pay-method-wrapper > #checkoutFormControl > #checkoutFormHolder > .checkout-form-wrapper {
+    width: 60%;
+}
+#checkout-pay-method-wrapper > #checkoutFormControl > #checkoutFormHolder > .checkout-form-wrapper h3 {
+    padding: 5px;
+    margin: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+#checkout-pay-method-wrapper > #checkoutFormControl > #checkoutFormHolder > .checkout-form-wrapper > .checkout-pay-type {
+    width: 60%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+#checkout-pay-method-wrapper > #checkoutFormControl > #checkoutFormHolder > .checkout-form-wrapper > .checkout-pay-type > div {
+    width: 50%;
+    height: auto;
+    margin: 0px 5px 0px 0px;
+    padding: 10px;
+    background: lightgray;;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#checkout-pay-method-wrapper > #checkoutFormControl > #checkoutFormHolder > .checkout-form-wrapper > .checkout-pay-type > div img {
+    width: 30%;
+}
+
+#checkout-pay-method-wrapper > #checkoutFormControl > #checkoutFormHolder > .checkout-form-wrapper > .form-container {
+    display: flex;
+    justify-content: space-around;
+} 
+#checkout-pay-method-wrapper > #checkoutFormControl > #checkoutFormHolder > .checkout-form-wrapper > .form-container-col {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+#checkout-pay-method-wrapper > #checkoutFormControl > #checkoutFormHolder > .checkout-form-wrapper > .form-container >
+.form-group-container {
+    width: 50%;
+    padding: 10px;
+}
+#checkout-pay-method-wrapper > #checkoutFormControl > #checkoutFormHolder > .checkout-form-wrapper > .form-container >
+.form-group-container > input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+}
+#checkout-pay-method-wrapper > #checkoutFormControl > #checkoutFormHolder > .checkout-form-wrapper > .form-container >
+.form-group-container > input#CvvNumber {
+    width: 81%;
+}
+.form-group-detailed-content > div > p {
+    font-size: 14px;
+    line-height: 1.2em;
+    padding: 5px;
+}
+#checkout-pay-method-wrapper > #checkoutFormControl > #checkoutFormHolder > .checkout-form-wrapper #buttonHolder > button {
+    padding: 12px;
+    margin: 10px;
+    font-size: 14px;
+    background: #1F1F20;
+    color: #fff;
+    border: 1px solid #1F1F20;
+    border-radius: 3px;
+    cursor: pointer;
+}
+#checkout-pay-method-wrapper > #checkoutFormControl > #checkoutFormHolder > .checkout-form-wrapper #buttonHolder > button:hover {
+    background: #313131;
+    border: 1px solid #313131;
+} 
+
+#checkout-pay-method-wrapper > #checkoutFormControl > #checkoutFormHolder > .order-form-wrapper {
+    width: 35%;
+}
+#checkout-pay-method-wrapper > #checkoutFormControl > #checkoutFormHolder > .order-form-wrapper h3 {
+    padding: 5px;
+    margin: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+#checkout-pay-method-wrapper > #checkoutFormControl > #checkoutFormHolder > .order-form-wrapper > .content-flex {
+    display: flex;
+    justify-content: space-between;
+    background: lightgray;
+    padding: 5px;
+    margin: 7px;
+}
+#checkout-pay-method-wrapper > #checkoutFormControl > #checkoutFormHolder > .order-form-wrapper > .holding-orders {
+    padding: 10px;
+}
+#checkout-pay-method-wrapper > #checkoutFormControl > #checkoutFormHolder > .order-form-wrapper > .holding-orders >
+.orders > .orders-container {
+    display: flex;
+    justify-content: space-between;
+}
+#checkout-pay-method-wrapper > #checkoutFormControl > #checkoutFormHolder > .order-form-wrapper > .holding-orders >
+.orders > .orders-container > .orders-holder {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+#checkout-pay-method-wrapper > #checkoutFormControl > #checkoutFormHolder > .order-form-wrapper > .holding-orders >
+.orders > .orders-container > .orders-holder > .orders-img-wrapper {
+    width: 30%;
+} 
+#checkout-pay-method-wrapper > #checkoutFormControl > #checkoutFormHolder > .order-form-wrapper > .holding-orders >
+.orders > .orders-container > .orders-holder > .orders-img-wrapper > img {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ccc;
+    border-radius: 9px;
+    background: #f5f5f5;
+} 
+#checkout-pay-method-wrapper > #checkoutFormControl > #checkoutFormHolder > .order-form-wrapper > .holding-orders >
+.orders > .orders-container > .orders-holder > .orders-description {
+    width: 70%;
+    font-size: 13px;
+    padding-left: 5px;
+}
+
+.three {
+    text-align: right;
+    padding-top: 7px;
+    line-height: 1.9em;
+}
+.three > div > p > a {
+    text-decoration: none;
+    color: #E30606;
+    font-size: 20px;
+}
+#checkout-pay-method-wrapper > #checkoutFormControl > #checkoutFormHolder > .order-form-wrapper > .amountsOrders {
+    padding: 5px;
+    margin: 7px;
+    margin-top: 2rem;
+}
+#checkout-pay-method-wrapper > #checkoutFormControl > #checkoutFormHolder > .order-form-wrapper > .amountsOrders > div {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    border-top: 1px solid lightgray;
+}
+#checkout-pay-method-wrapper > #checkoutFormControl > #checkoutFormHolder > .order-form-wrapper > .amountsOrders > div > p:last-child {
+    font-weight: bold;
+}
+
+#checkout-newsletter {
+    width: 90%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#checkout-newsletter > div {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#checkout-newsletter > div > .checkout-newsletter-img-holder {
+    width: 10%;
+}
+#checkout-newsletter > div > .checkout-newsletter-description {
+    width: 85%;
+    color: #1F1F20;
+
+}
+#checkout-newsletter > div > .checkout-newsletter-description h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #1F1F20;
+}
+#checkout-newsletter > div > .checkout-newsletter-img-holder  img {
+    width: 100%;
+}   
+#checkout-newsletter > form  {
+    width: 50%;
+    height: auto;
+    border: 1px solid #1F1F20;
+}
+#checkout-newsletter > form > input[type="text"] {
+    width: 90%;
+    padding: 10px;
+    margin-top: 2px;
+    font-size: 1rem;
+    border: none;
+}
+#checkout-newsletter > form > input[type="text"]:focus {
+    width: 90%;
+    padding: 10px;
+    margin-top: 3px;
+    font-size: 1rem;
+    border-top: 0px solid #fff;
+    outline: none;
+}
+#checkout-newsletter > form > button {
+    padding: 5px;
+    margin-top: 2px;
+    font-size: 1.5rem;
+    background: #fff;
+    border: 0px solid #fff;
+    outline: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+    #checkout-pay-method-wrapper > #checkoutFormControl > #checkoutFormHolder > .checkout-form-wrapper > .checkout-pay-type {
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        justify-content: space-around;
+    }
+    #checkout-pay-method-wrapper > #checkoutFormControl > #checkoutFormHolder {
+        flex-direction: column;
+    }   
+    #checkout-pay-method-wrapper > #checkoutFormControl > #checkoutFormHolder > .checkout-form-wrapper {
+        width: 100%;
+    }
+    #checkout-pay-method-wrapper > #checkoutFormControl > #checkoutFormHolder > .order-form-wrapper {
+        width: 100%;
+    }
+    .form-container-col {
+        flex-direction: column !important;
+    }
+    .form-container-col > .form-group-container {
+    width: 100% !important;
+    padding: 10px;
+    }
+    .form-container-col > .form-group-container > input#CvvNumber {
+        width: 100% !important;
+    }
+    .form-container-col > .form-group-detailed-content {
+        padding: 10px;
+    }
+}

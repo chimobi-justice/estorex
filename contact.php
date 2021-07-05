@@ -1,30 +1,43 @@
-  <?php include('template/header.php'); ?>
+<?php include('template/header.php'); ?>
 
+  <section id="contact-container">
+      <div>
+          <div class="contact-content">
+              <h3>Contact Us</h3>
+              <p>Fill up the form and our team will get back to you within 24 hours</p>
+              <div>
+                <p>+234 8021185592</p>
+                <p><a href="mailto:estorex@gmail.com">estorex@gmail.com</a></p>
+                <p>Lagos State, Nigeria</p>
+              </div>
+          </div>
+          <div class="contact-img">
+            <img src="assets/images/IMG_20210119_124917.png" alt="contact">
+          </div>
+      </div>
+      <div>
+        <form action="" method="POST" id="contact-form-control">
+          <div class="form-container">
+             <div class="form-group-container">
+                <label for="name">Your name</label>
+                <input type="text" id="name" placeholder="Your Name">
+             </div>
+             <div class="form-group-container">
+                <label for="email">Mail</label>
+                <input type="email" id="email" placeholder="Enter Email">
+             </div>
+             <div class="form-group-container">
+                <label for="message">Message</label>
+                <textarea id="message" cols="20" rows="5" placeholder="Message"></textarea>
+             </div>
+             <div class="buttonHolder">
+                  <button type="submit">Contact Us</button>
+             </div>
+          </div>
+        </form>
+      </div>
+  </section>
 
-<main>
-  <div class="contact_container">
-    <div id="contact_img_holder">
-      <h4 id="contact_content">How can we help you</h4>
-      <div id="contact_img"><img src="assets/images/contact.png" alt="contact"></div>
-    </div>
-    <div>
-      <form method="POST" id="contact">
-        <label for="firstname">Firstname</label>
-        <input type="text" name="firstname" id="firstname" placeholder="firstname">
-        <p id="firstNameFeedBack"></p>
-        <label for="lastname">Lastname</label>
-        <input type="text" name="lastname" id="lastname"placeholder="lastname">
-        <p id="lastNameFeedBack"></p>
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" placeholder="email address">
-        <p id="emailFeedBack"></p>
-        <label for="msg">Message</label>
-        <textarea name="message" id="msg" cols="30" rows="10"></textarea>
-        <p id="msgFeedBack"></p>
-        <button type="submit">Submit</button><br>
-      </form>
-    </div>
-  </div>
-  </main>
+  <?php include('newsletter.php'); ?>
 
-  <?php include('template/footer.php'); ?>
+<?php include('template/footer.php'); ?>

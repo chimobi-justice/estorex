@@ -1,68 +1,129 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+#contact-container {
+    width: 90%;
+    margin: 6rem auto;
+    display: flex;
+    flex-direction: row;
 }
-body {
-    background: #fff;
-    color: #000;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    line-height: 1.5em;
-    height: 100vh;
+#contact-container > div {
+    width: 50%;
+    height: auto;
+    border: 3px solid #1F1F20;
 }
 
-.contact_container {
+#contact-container > div > .contact-content {
+    padding: 10px;
+    width: 80%;
+    margin: 2rem auto;
+}
+#contact-container > div > .contact-content > h3 {
+    padding-bottom: 1rem;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+#contact-container > div > .contact-content > p {
+    font-size: 16px;
+    line-height: 1.2em;
+    padding: 10px;
+    margin-bottom: 15px;
+    color: #1F1F20;
+}
+#contact-container > div > .contact-content > div > p{
+    padding-bottom: 10px;
+    padding: 10px;
+    width: 60%;
+
+}
+#contact-container > div > .contact-content > div > p:nth-child(even){
+    padding-bottom: 10px;
+    border: 2px solid #1F1F20;
+}
+#contact-container > div > .contact-content > div > p:nth-child(even) > a {
+    text-decoration: none;
+    color: #1F1F20;
+}
+
+#contact-container > div > .contact-img {
+    width: 40%;
+    float: right;
+    height: auto;
+    position: relative;
+    bottom: 120px;
+}
+#contact-container > div > .contact-img > img {
+    width: 100%;
+    height: 150px;
+}
+
+#contact-container > div:last-child {
+    width: 50%;
+}
+#contact-container > div > #contact-form-control .form-container {
     width: 90%;
-    margin: 0px auto;
-    padding-top: 3rem;
-    display: flex;
-    justify-content: space-around;
-}
-.contact_container > #contact_img_holder {
-    margin-right: 20px;
-}
-.contact_container > #contact_img_holder > #contact_content {
-    text-align: center;
-    font-size: 1.5em;
-    color: #ccc;
-}
-.contact_container > #contact_img_holder > #contact_img {
-    width: 100%;
-}
-.contact_container > #contact_img_holder > #contact_img > img{
-    width: 100%;
-    height: 450px;
-}
-.contact_container > div #contact {
+    margin: 2rem auto;
+    padding: 15px;
+} 
+#contact-container > div > #contact-form-control .form-container >
+.form-group-container {
     width: 100%;
     padding: 10px;
-    margin: 5px;
-    box-shadow: 0px 1px 2px 0px; 
 }
-.contact_container > div #contact > input, textarea {
+#contact-container > div > #contact-form-control > .form-container >
+.form-group-container > input {
     width: 100%;
     padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 10px;
+    font-size: 1rem;
+}
+.form-container-address {
+    padding: 10px;
+}
+#contact-container > div > #contact-form-control > .form-container >
+.form-group-container textarea{
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
     resize: none;
 }
-.contact_container > div #contact > button {
-    width: 100%;
-    padding: 5px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    font-size: 1.2em;
-    background: blue;
+#contact-container > div > #contact-form-control > .form-container .buttonHolder > button {
+    padding: 12px;
+    margin: 10px;
+    font-size: 14px;
+    background: #000;
     color: #fff;
-    border: 1px solid blue;
-    outline: none; 
+    border: 1px solid #000;
+    border-radius: 3px;
     cursor: pointer;
 }
-.contact_container > div #contact > button:hover {
-    background: rgb(26, 26, 226);
+#contact-container > div > #contact-form-control > .form-container .buttonHolder > button:hover {
+    background: #313131;
+    border: 1px solid #313131;
+} 
+
+@media screen and (max-width: 576px) {
+    #contact-container {
+        width: 90%;
+        flex-direction: column;
+    }
+    #contact-container > div {
+        width: 100%;
+    }
+    #contact-container > div:last-child {
+        width: 100%;
+    }
 }
-/* show error msg */
-#firstNameFeedBack, #lastNameFeedBack, #emailFeedBack, #pswFeedBack {
-    color: lightcoral;
-    padding: 5px;
+
+@media screen and (max-width: 380px) {
+    #contact-container {
+        width: 95%;
+    }
+    #contact-container > div > .contact-content {
+        padding: 5px;
+        width: 100%;
+        margin: 2rem auto;
+    }
+    #contact-container > div > #contact-form-control .form-container {
+        width: 95%;
+        margin: 2rem auto;
+        padding: 5px;
+    }
 }

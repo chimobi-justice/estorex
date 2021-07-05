@@ -1,7 +1,8 @@
 <?php
 
+    include('constanst.php');
     #connect to database
-    $conn = mysqli_connect('localhost', 'justice', '123456789', 'extorex');
+    $conn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 
     #check connection
     if (!$conn) {

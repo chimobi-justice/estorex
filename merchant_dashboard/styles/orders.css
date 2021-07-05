@@ -1,0 +1,71 @@
+#emptyCart-wrapper {
+    width: 98%;
+    margin: 2rem auto;
+}
+#emptyCart-wrapper  > .emptyCart-content {
+    padding-top: 1rem;
+
+}
+#emptyCart-wrapper  > .emptyCart-content h2, h3{
+    line-height: 1.5em;
+}
+#proceed-order-wrapper > .proceed-order-title {
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+}
+#proceed-order-wrapper > #proceed-order-container {
+    width: 98%;
+    margin: 2rem auto;
+    border: 1px solid #1F1F20;
+    border-radius: 3px;
+}
+#proceed-order-wrapper > #proceed-order-container > div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row; 
+    border-bottom: 1px solid #1F1F20;
+}
+#proceed-order-wrapper > #proceed-order-container > div > p {
+    text-align: center;
+    width: 25%;
+    border: 1px solid #1F1F20;;
+    padding: 10px;
+}
+#proceed-order-wrapper > #proceed-order-container > div > p a {
+    text-decoration: none;
+    color: #5e7;
+}
+#proceed-order-wrapper > #proceed-order-container > div > p a:hover {
+    text-decoration: underline
+}
+
+@media screen and (max-width: 576px) {
+    #proceed-order-wrapper > .proceed-order-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    #proceed-order-wrapper > #proceed-order-container {
+        width: 95%;
+        height: auto;
+        overflow: auto;
+    }
+    #proceed-order-wrapper > #proceed-order-container > div {
+        width: 150%;
+        overflow-x: scroll;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    #proceed-order-wrapper > #proceed-order-container > div {
+        width: 200%;
+        overflow-x: scroll;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #proceed-order-wrapper > #proceed-order-container > div {
+        width: 220%;
+        overflow-x: scroll;
+    }
+}

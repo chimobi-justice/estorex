@@ -1,4 +1,3 @@
-let form = document.getElementById('signup');
 let fName = document.getElementById('firstname');
 let fNameErr = document.getElementById('firstNameFeedBack');
 let lName = document.getElementById('lastname');
@@ -9,9 +8,11 @@ let psw = document.getElementById('psw');
 let pswErr = document.getElementById('pswFeedBack');
 let successResponseText = document.getElementById('successResponseText');
 
+let handleSignupBtn = document.querySelector('.handleSignupBtn');
 
 
-const userSignupFeeds = () => {
+
+const handleSignupFeeds = () => {
     if (fName.value.length > 0) {
         fNameErr.textContent = '';
     } 
@@ -25,16 +26,23 @@ const userSignupFeeds = () => {
         pswErr.textContent = '';
     } 
 }
-fName.addEventListener('keyup', userSignupFeeds);
-lName.addEventListener('keyup', userSignupFeeds);
-email.addEventListener('keyup', userSignupFeeds);
-psw.addEventListener('keyup', userSignupFeeds);
+fName.addEventListener('keyup', handleSignupFeeds);
+lName.addEventListener('keyup', handleSignupFeeds);
+email.addEventListener('keyup', handleSignupFeeds);
+psw.addEventListener('keyup', handleSignupFeeds);
+
+const loading = () => {
+    if (handleSignupBtn) {
+        handleSignupBtn.addEventListener('click', () => {
+            handleSignupBtn.textContent = 'loading...';
+        });
+    }
+}
+
+window.onload = loading;
 
 if (successResponseText) {
     setTimeout(() => {
         successResponseText.remove();
     }, 5000)
 }
-
-
-

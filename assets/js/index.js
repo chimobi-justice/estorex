@@ -1,21 +1,33 @@
-let loggedIn = document.getElementById('login');
-let signUp = document.getElementById('signup');
+let menu_icon = document.getElementById('menu_icon');
+let asideNav = document.getElementById('asideNav');
+
+let mobile_menu = document.getElementById('mobile_menu');
+let close_menu = document.querySelector('.close_menu');
+let hambuger_wrapper_list = document.getElementById('hambuger_wrapper_list');
+
 let copyRight = document.getElementById('copyright');
 
-const logClickBtn = () => {
-    if (loggedIn) {
-        location.href = './auth/login.php';
-    }
-}
-loggedIn.addEventListener('click', logClickBtn);
+menu_icon.onclick = () => asideNav.classList.toggle('toggleNav');
 
-const signUpClickBtn = () => {
-    if (signUp) {
-        location.href = './auth/signup.php';
+if (mobile_menu) {
+    mobile_menu.onclick = () => {
+        close_menu.style.display = 'block';
+        mobile_menu.style.display = 'none';
+        hambuger_wrapper_list.classList.toggle('toggleNav');
     }
 }
-signUp.addEventListener('click', signUpClickBtn);
+
+if (close_menu) {
+    close_menu.onclick = () => {
+        mobile_menu.style.display = 'block';
+        close_menu.style.display = 'none';
+        hambuger_wrapper_list.classList.toggle('toggleNav');
+    }
+}
 
 // get fullyear and update copyright
 let d = new Date();
 copyRight.textContent = d.getFullYear();
+
+
+

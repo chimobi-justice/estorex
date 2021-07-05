@@ -1,0 +1,116 @@
+.dashboard-option-text {
+    padding: 10px;
+}
+.dashboard-option-text > div > h3 > a {
+    text-decoration: none;
+    color: #000;
+}
+.dashboard-option-text > div > h3 > a:hover {
+    color: #797070;
+}
+.option {
+    font-size: 16px;
+}
+#addSaleForm {
+    width: 70%;
+    margin: 5rem auto;
+    padding: 12px;
+    box-shadow: 0px 2px 4px 0px;
+}
+#addSaleForm > .wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 5px;
+}
+#addSaleForm > .wrapper > .form-group-container {
+    width: 48%;
+    margin: 10px auto;
+} 
+#addSaleForm > .wrapper > .form-group-container > input {
+    width: 100%;
+    padding: 10px;
+    margin: 0px 0px 1px 0px;
+    font-size: 1rem;
+}
+#addSaleForm > .wrapper > .form-group-container > select {
+    width: 100%;
+    padding: 10px;
+    margin: 0px 0px 1px 0px;
+    font-size: 1rem;
+}
+#addSaleForm > .form-group-container {
+    width: 95%;
+    margin: 0px auto;
+}
+#addSaleForm > .form-group-container > select {
+    width: 100%;
+    padding: 10px;
+    margin: 3px 0px 25px 0px;
+    font-size: 1rem;
+    resize: none;
+}
+#addSaleForm > .form-group-container > textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 3px 0px 10px 0px;
+    font-size: 1.1rem;
+    resize: none;
+}
+#addSaleForm > #uploadContainer {
+    width: 95%;
+    margin: 10px auto;
+} 
+#addSaleForm > #uploadContainer > #openUploadBox {
+    display: block;
+    background: #8e8c8c21;
+    color: #636161;
+    padding: 4.5rem;
+    text-align: center;
+    font-size: 1.7em;
+    border: 2px dotted #636161;
+    border-radius: 3px;
+    cursor: pointer;
+}
+#addSaleForm > #uploadContainer > #upload {
+    display: none;
+}
+#addSaleForm > #buttonHolder {
+    width: 95%;
+    margin: 25px auto;
+}
+#addSaleForm > #buttonHolder > button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    background: #1F1F20;
+    color: #fff;
+    border: 1px solid #1F1F20;
+    border-radius: 3px;
+    cursor: pointer;
+}
+#addSaleForm > #buttonHolder > button:hover {
+    background: #1F1F20; 
+
+}
+.notice {
+    color: lightcoral;
+    padding: 5px 0px 2px 0px;
+}
+
+/* queries */
+
+@media screen and (max-width: 576px) {
+    #addSaleForm {
+        width: 90%;
+        margin: 5rem auto;
+        padding: 12px;
+        box-shadow: 0px 2px 4px 0px;
+    }
+    #addSaleForm > .wrapper{
+        flex-direction: column;
+    }
+    #addSaleForm > .wrapper > .form-group-container {
+        width: 100%;
+    } 
+}

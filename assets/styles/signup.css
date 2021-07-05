@@ -8,46 +8,38 @@ body {
     color: #000;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-.signup_container {
-    width: 90%;
-    margin: 0px auto;
-    padding-top: 4rem;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-}
-.signup_container > .signup_img_holder {
-    width: 50%;
-    height: 80vh;
-   
-}
-.signup_container > .signup_img_holder > #signup_content {
-    text-align: center;
+.response {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
     padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    color: #000;
+    border-radius: 3px;
 }
-.signup_container > .signup_img_holder > #signup_img_wrapper > img {
-    width: 80%;
-    height: 450px;
-    margin: 25px 0px 0px 55px;
-    
+.success {
+    background: #d4edda;
 }
-
+.err {
+    background: #f8d7da;
+}
+.signup_container {
+    width: 50%;
+    margin: 0px auto;
+    padding: 4rem 0rem 4rem 0rem;
+}
 .signup_container > #signup_contact_holder {
-    width: 55%;
-    height: 80vh;
+    width: 100%;
+    height: auto;
 }
 .signup_container > #signup_contact_holder > h1 {
     text-align: center;
-    padding: 10px;
 }
-.signup_container > #signup_contact_holder >  div#successResponseText > p{
+.signup_container > #signup_contact_holder > p {
     text-align: center;
-    color: #008000;
-    background: #90ee90;
-    width: 60%;
-    margin: auto;
-    padding: 15px;
-    margin-bottom: 15px; 
+    color: #a59f9f;
 }
 .signup_container > #signup_contact_holder > h1 a{
     color: #000;
@@ -56,15 +48,18 @@ body {
 .signup_container > #signup_contact_holder > #signup{
         width: 60%;
         margin: 0px auto;
-        margin-top: 1rem;
-        padding: 10px;
+        margin-top: 2rem;
+        padding: 20px;
+        border: 2px solid #1F1F20;
 }
 .signup_container > #signup_contact_holder > #signup > input{
     width: 100%;
-    padding: 15px;
-    margin-top: 5px;
-    margin-bottom: 10px;
+    padding: 10px;
+    margin: 5px 0px 5px 0px;
+    font-size: 1rem;
 }
+
+
 #firstNameFeedBack, #lastNameFeedBack, #emailFeedBack, #pswFeedBack {
     color: lightcoral;
     padding: 3px;
@@ -74,23 +69,66 @@ body {
     padding: 10px;
     margin-bottom: 7px;
     font-size: 18px;
-    background: #90ee90;
+    background: #1F1F20;
     color: #fff;
-    border: 1px solid #90ee90;
+    border: 1px solid #1F1F20;
+    border-radius: 3px;
     cursor: pointer;
     outline: none;
 }
 .show_btn:hover {
-    background: #008000;
+    border: 1px solid #1F1F20;
+}
+#signup_contact_holder > #btn_submit {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 7px;
+    font-size: 18px;
+    background: #1F1F20;
     color: #fff;
+    border: 1px solid #1F1F20;
+    border-radius: 3px;
+    cursor: pointer;
+    outline: none;
+}
+ #btn_submit:hover {
+    background: #1F1F20; 
 } 
+.signup-content {
+    color: #1F1F20;
+    text-align: center;
+} 
+.signup-content > a {
+    color: #000;
+}
+.signup-content > a:hover {
+    text-decoration: none;
+}
 .signup-content-inform {
    color: #a59f9f;
    padding-top: 5px;
 }
 
+/* queries */
 @media screen and (max-width: 576px) {
     .signup_container {
-        flex-direction: column;
+        width: 90%;
+        margin: 0px auto;
+        padding-top: 4rem;
+    }
+    .signup_container > #signup_contact_holder > #signup{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .signup_container {
+        width: 98%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .signup_container {
+        width: 100%;
     }
 }
