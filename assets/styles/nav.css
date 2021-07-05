@@ -1,0 +1,33 @@
+#navBar {
+    width: 90%;
+    margin: 0px auto;
+    height: auto;
+    position: sticky;
+    position: -webkit-sticky; 
+    top: 0;
+    z-index: 1;
+    background: #f1efef;    
+}
+#navBar > ul {
+    margin: 0px auto;
+    display: flex;
+}
+#navBar > ul > li {
+    list-style: none;
+    padding: 5px;
+    padding-left: 30px;
+    margin: 10px;
+}
+#navBar > ul > li > a {
+    text-decoration: none;
+    color: #1F1F20;
+}
+#navBar > ul > li > a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 576px) {
+    #navBar {
+        display: none;
+    }
+}

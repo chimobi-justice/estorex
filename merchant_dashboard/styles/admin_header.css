@@ -1,0 +1,458 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    color: #fff;
+    background: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 80px;
+    padding: 10px;
+    margin-left: 20%;
+    background: #fff;
+    border-bottom: 1px solid #cfcfcf;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+}
+/* click menu open */
+#navbar > .menu-holder > #menu-icon {
+    display: block;
+    padding-top: 13px;
+    cursor: pointer;
+}
+#navbar > .menu-holder > #menu-icon > .icon{
+    width: 30px;
+    height: 2px;
+    margin: 5px;
+    border: 2px solid #000;
+}
+/* click menu close */
+#navbar > .menu-holder > #close-icon {
+    display: none;
+    padding-top: 13px;
+    cursor: pointer;
+}
+#navbar > .menu-holder > #close-icon > .icon{
+    width: 30px;
+    height: 2px;
+    margin: 5px;
+    border: 2px solid #000;
+}
+#navbar > .menu-holder > #menu-icon > .icon2 {
+    margin-left: 10px;
+}
+#navbar > .user-profile {
+    display: flex;
+    justify-content: space-around;
+    width: auto;
+    color: #000;
+}
+#navbar > .user-profile > p {
+    padding-top: 17px;
+    padding-right: 3px;
+}
+#navbar > div.user-profile .user-profile-photo {
+    margin-top: 6px;
+    padding: 5px;
+}
+#navbar > div.user-profile .user-profile-photo > img{
+    width: 35px;
+    height: 40px;
+    border-radius: 50%; 
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.aside_nav {
+    width: 20%;
+    background: #000;
+    position: fixed;
+    top: 0px;
+    height: 100vh;
+}
+.aside_nav > h1#header {
+    text-align: center;
+    padding: 25px;
+    border-bottom: 1px solid #ccc;
+    height: 80px;
+}
+.aside_nav > h1#header > a {
+    text-decoration: none;
+    color: #fff;
+}
+.aside_nav > #user_holder {
+    margin-top: 1.5rem;
+    padding: 12px;
+    height: auto;
+}
+.aside_nav > #user_holder > .image_profile_holder > img{
+    width: 35%;
+    height: 80px;
+    border-radius: 50%;
+    margin-left: 5rem;
+}
+.aside_nav > #user_holder > h4 {
+    text-align: center;
+    padding: 5px;
+    margin-top: 5px;
+    color: #fff;
+}
+.aside_nav > .dashboard_conponents {
+    padding-top: 1rem;
+}
+.aside_nav > .dashboard_conponents > li {
+    padding-bottom: 1rem;
+    list-style: none;
+}
+.aside_nav > .dashboard_conponents > li > a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+}
+.aside_nav > .dashboard_conponents > li > a:hover{
+    background: lightblue;
+    color: #fff;
+    transition: 0.4s;
+}
+
+.main-body {
+    margin-top: 7rem;
+    margin-left: 20%;
+    color: #000;
+}
+
+.toggleNav {
+    display: block !important;
+}
+
+/* navbar MOBILE */
+
+#navbar-mobile {
+    display: none;
+}
+.aside-nav-mobile {
+    display: none;
+    animation-name: slide;
+    animation-duration: .2s;
+    animation-timing-function: linear ease-out;
+}
+
+/* END OF MOBILE */
+
+@media screen and (max-width: 576px) {
+    #navbar {
+        display: none;
+    }
+    .aside_nav {
+        display: none;
+    }
+    #navbar-mobile {
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 80px;
+        padding: 10px;
+        background: #fff;
+        border-bottom: 1px solid #cfcfcf;
+        position: fixed;
+        top: 0px;
+        z-index: 1;
+    }
+    #navbar-mobile > .menu-holder-mobile > #menu-icon-mobile {
+        display: block;
+        padding-top: 13px;
+        cursor: pointer;
+    }
+    #navbar-mobile > .menu-holder-mobile > #menu-icon-mobile > .icon-mobile{
+        width: 30px;
+        height: 2px;
+        margin: 5px;
+        border: 2px solid #000;
+    }
+    #navbar-mobile > .user-profile-mobile {
+        display: flex;
+        justify-content: space-around;
+        width: auto;
+        color: #000;
+    }
+    #navbar-mobile > .user-profile-mobile > p {
+        padding-top: 17px;
+        padding-right: 3px;
+    }
+    #navbar-mobile > div.user-profile-mobile .user-profile-photo-mobile {
+        margin-top: 6px;
+        padding: 5px;
+        cursor: pointer; 
+    }
+    #navbar-mobile > div.user-profile-mobile .user-profile-photo-mobile > img{
+        width: 35px;
+        height: 40px;
+        border-radius: 50%; 
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    .aside-nav-mobile {
+        width: 60%;
+        height: 100vh;
+        background: #000;
+        position: fixed;
+        top: 0px;
+        z-index: 1;
+    }
+    @keyframes slide {
+        0%{
+            width: 0px;
+        }
+        60%{
+            width: 60px;
+        }
+    }
+    .aside-nav-mobile > div {
+        border-bottom: 1px solid #ccc;
+        height: 80px;
+    }
+    .aside-nav-header {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+    }
+    .aside-nav-header > h1#header {
+        text-align: center;
+        padding: 15px;
+        height: 75px;
+    }
+    .aside-nav-header > h1#header > a {
+        text-decoration: none;
+        color: #fff;
+    }
+    .aside-nav-mobile > .mobile-dashboard_conponents-list {
+        margin-top: 1.5rem;
+        padding: 6px;
+        height: auto;
+    }
+     .aside-nav-mobile > .mobile-dashboard_conponents-list > li {
+        list-style: none;
+        left: 0px;
+        margin: 8px;
+        height: auto;
+    }
+    .aside-nav-mobile > .mobile-dashboard_conponents-list > li > a{
+        display: block;
+        text-decoration: none;
+        color: #fff;
+        padding: 10px;
+    }
+     .aside-nav-mobile > .mobile-dashboard_conponents-list > li > a:hover{
+        background: #fff;
+        color: #000;
+    
+    }
+    .aside-nav-mobile > div > #close-icon-mobile {
+        font-size: 3em;
+        right: 50px;
+        cursor: pointer;
+    }
+
+    .main-body {
+        margin-top: 5rem;
+        margin-left: 0px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .aside-nav-mobile {
+        width: 70%;
+    }
+    @keyframes slide {
+        0%{
+            width: 0px;
+        }
+        60%{
+            width: 70px;
+        }
+    }
+}
+
+@media screen and (max-width: 411px) {
+    .aside-nav-mobile {
+        width: 75%;
+    }
+    @keyframes slide {
+        0%{
+            width: 0px;
+        }
+        60%{
+            width: 75px;
+        }
+    }
+}
+@media screen and (max-width: 380px) {
+    .aside-nav-mobile {
+        width: 80%;
+    }
+    @keyframes slide {
+        0%{
+            width: 0px;
+        }
+        60%{
+            width: 80px;
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .aside-nav-mobile {
+        width: 85%;
+    }
+    @keyframes slide {
+        0%{
+            width: 0px;
+        }
+        60%{
+            width: 85px;
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .aside-nav-mobile {
+        width: 83%;
+    }
+    @keyframes slide {
+        0%{
+            width: 0px;
+        }
+        60%{
+            width: 83px;
+        }
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .aside-nav-mobile {
+        width: 100%;
+    }
+    @keyframes slide {
+        0%{
+            width: 0px;
+        }
+        60%{
+            width: 100px;
+        }
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    #navbar {
+        display: none;
+    }
+    .aside-nav {
+        display: none;
+    }
+    #navbar-mobile {
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 80px;
+        padding: 10px;
+        background: #fff;
+        border-bottom: 1px solid #cfcfcf;
+        position: fixed;
+        top: 0px;
+        z-index: 1;
+    }
+    #navbar-mobile > .menu-holder-mobile > #menu-icon-mobile {
+        display: block;
+        padding-top: 13px;
+        cursor: pointer;
+    }
+    #navbar-mobile > .menu-holder-mobile > #menu-icon-mobile > .icon-mobile{
+        width: 30px;
+        height: 2px;
+        margin: 5px;
+        border: 2px solid #000;
+    }
+    #navbar-mobile > .user-profile-mobile {
+        display: flex;
+        justify-content: space-around;
+        width: auto;
+        color: #000;
+    }
+    #navbar-mobile > .user-profile-mobile > p {
+        padding-top: 17px;
+        padding-right: 3px;
+    }
+    #navbar-mobile > div.user-profile-mobile .user-profile-photo-mobile {
+        margin-top: 6px;
+        padding: 5px;
+        cursor: pointer; 
+    }
+    #navbar-mobile > div.user-profile-mobile .user-profile-photo-mobile > img{
+        width: 35px;
+        height: 40px;
+        border-radius: 50%; 
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    .aside-nav-mobile {
+        width: 75%;
+        height: 100vh;
+        background: #000;
+        position: absolute;
+        top: 0px;
+        z-index: 1;
+    }
+    .aside-nav-mobile > div {
+        border-bottom: 1px solid #ccc;
+        height: 80px;
+    }
+    .aside-nav-mobile > div > h1#header > a {
+        text-decoration: none;
+    }
+    .aside-nav-mobile > .mobile-dashboard_conponents-list {
+        margin-top: 1.5rem;
+        padding: 6px;
+        height: auto;
+    }
+    .aside-nav-mobile > .mobile-dashboard_conponents-list > li {
+        list-style: none;
+        left: 0px;
+        margin: 1.5rem 0rem 0rem 1rem;
+        height: auto;
+    }
+    .aside-nav-mobile > .mobile-dashboard_conponents-list > li > a{
+        display: block;
+        text-decoration: none;
+        color: #fff;
+        padding: 10px;
+    }
+    .aside-nav-mobile > .mobile-dashboard_conponents-list > li > a:hover{
+        background: #fff;
+        color: #000;
+    
+    }
+    .aside-nav-mobile > div > #close-icon-mobile {
+        font-size: 2em;
+        right: 50px;
+        cursor: pointer;
+    }
+
+    .main-body {
+        margin-top: 9rem;
+        margin-left: 0px;
+        width: 100%;
+    }
+}

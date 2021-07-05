@@ -1,0 +1,108 @@
+#detailHolder {
+    width: 90%;
+    margin: 4rem auto;
+}
+#detailHolder > .detailContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+#detailHolder > .detailContainer > div:first-child {
+    width: 40%;
+    padding: 15px;
+}
+#detailHolder > .detailContainer > div:first-child > img {
+    width: 100%;
+    height: 300px;
+    border-radius: 9px;
+    background: #f5f5f5;
+}
+#detailHolder > .detailContainer > div:last-child {
+    width: 60%;
+    padding: 15px;
+}
+#detailHolder > .detailContainer > div:last-child > .description > h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #1F1F20;
+}
+#detailHolder > .detailContainer > div:last-child > .description > p {
+    font-size: 16px;
+    color: #1F1F20;
+    line-height: 1.7em;
+}
+#detailHolder > .detailContainer > div:last-child > .description {
+    border-bottom: 1px solid #ccc;
+}
+#detailHolder > .detailContainer > div:last-child > .description > span > s {
+    color: #ff0000;
+}
+
+#detailHolder > .detailContainer > div:last-child > .size {
+    margin-top: 14px;
+}
+
+#detailHolder > .detailContainer > div:last-child > .size > p{
+    font-weight: bold;
+    font-size: 14px;
+}
+#detailHolder > .detailContainer > div:last-child > .color {
+    margin-top: 14px;
+}
+#detailHolder > .detailContainer > div:last-child > .color > p{
+    font-weight: bold;
+    font-size: 12px;
+}
+#shoppingCartHolder > .shoppingCartContainer > div:last-child > .quantity {
+    margin-top: 12px;
+}
+#shoppingCartHolder > .shoppingCartContainer > div:last-child > .quantity > p {
+    font-weight: bold;
+    font-size: 10px;
+}
+
+#shoppingCartHolder > .shoppingCartContainer > div:last-child > div {
+    margin-top: 10px;
+}
+#shoppingCartHolder > .shoppingCartContainer > div:last-child > div > p.info {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.customer-info {
+    width: 90%;
+    margin: 15px auto;
+    padding: 10px;
+}
+.customer-info > h2 {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.customer-info > .customer-name, .customer-info > .customer-email, .customer-info > .customer-tel,
+.customer-info > .customer-city, .customer-info > .customer-postcode, .customer-info > .customer-home-address, .customer-info > .customer-date-created {
+    padding-bottom: 10px;
+    font-style: oblique;
+    border-bottom: 1px solid #ccc;
+}
+
+@media screen and (max-width: 576px) {
+    #detailHolder > .detailContainer {
+        flex-direction: column;
+    }
+    #detailHolder > .detailContainer > div:first-child {
+        width: 100%;
+        padding: 15px;
+    }
+    #detailHolder > .detailContainer > div:last-child {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .customer-info > h2 {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+}
+

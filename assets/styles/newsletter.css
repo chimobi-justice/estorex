@@ -1,0 +1,89 @@
+#newsletter {
+    width: 90%;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+#newsletter > div {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+#newsletter > div > .newsletter-img-holder {
+    width: 10%;
+}
+#newsletter > div > .newsletter-description {
+    width: 85%;
+}
+#checkout-newsletter > div > .newsletter-description h3 {
+    font-size: 16px;
+    font-weight: bold;
+}
+#newsletter > div > .newsletter-img-holder  img {
+    width: 100%;
+}   
+#newsletter > form  {
+    width: 50%;
+    height: auto;
+    border: 1px solid #000;
+}
+#newsletter > form > input {
+    width: 90%;
+    padding: 10px;
+    margin-top: 2px;
+    font-size: 1rem;
+    border: none;
+}
+#newsletter > form > input:focus {
+    width: 90%;
+    padding: 10px;
+    margin-top: 3px;
+    font-size: 1rem;
+    border-top: 0px solid #fff;
+    outline: none;
+}
+#newsletter > form > button {
+    padding: 5px;
+    margin-top: 2px;
+    font-size: 1.5rem;
+    background: #fff;
+    border: 0px solid #fff;
+    outline: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+    #newsletter {
+        flex-direction: column;
+    }
+    #newsletter > div {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    #newsletter > form {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    #newsletter > form > input {
+        width: 87%;
+    }
+    #newsletter > form > input:focus {
+        width: 87%;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    #newsletter > form > input {
+        width: 83%;
+    }
+    #newsletter > form > input:focus {
+        width: 83%;
+    }
+}

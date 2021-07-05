@@ -1,0 +1,53 @@
+#products {
+    padding: 50px 0px 10px 0px;
+}
+#products > .product-wrapper {
+    width: 90%;
+    margin: 0rem auto;
+}
+#products > .product-wrapper > .product-holder {
+    width: 24%;
+    height: auto;
+    padding: 1px;
+    margin: 15px 4px 15px 3px;
+    display: inline-block;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#products > .product-wrapper > .product-holder a {
+    text-decoration: none;
+    border-radius: 10px;
+    display: block;    
+    color: #1F1F20;
+}
+#products > .product-wrapper > .product-holder:hover {
+    border: 1px solid #1F1F20;
+}
+#products > .product-wrapper > .product-holder > a div img {
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+    background: #f5f5f5;
+}
+#products > .product-wrapper > .product-holder > a div p {
+    padding: 5px;
+    line-height: 16px;
+}
+
+@media screen and (max-width: 576px) {
+    #products > .product-wrapper > .product-holder {
+        width: 48% !important;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    #products > .product-wrapper > .product-holder {
+        width: 47% !important;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #products > .product-wrapper > .product-holder {
+        width: 100% !important;
+    }
+}

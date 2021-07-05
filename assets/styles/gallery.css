@@ -1,0 +1,97 @@
+#gallery {
+    width: 100%;
+    margin: 10px auto;
+}
+#gallery > #gallery-content {
+    width: 30%;
+    margin: 0px auto;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    top: 15rem;
+}
+#gallery > #gallery-content > h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1F1F20;
+}
+#gallery > #gallery-content > p {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1F1F20;
+}
+#gallery > #gallery-content > .gallery-links {
+    width: 80%;
+    height: auto;
+    margin: 14px auto;
+}
+#gallery > #gallery-content > .gallery-links > a {
+    text-decoration: none;
+    padding: 8px;
+    margin: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #1F1F20;
+    border-radius: 3px;
+    cursor: pointer;
+}
+#gallery > #gallery-content > .gallery-links > a:first-child {
+    background: transparent;
+    border: 2px solid #000;
+}
+#gallery > #gallery-content > .gallery-links > a:last-child {
+    background: #E30606;
+    color: #fff;
+    border: 2px solid #E30606;
+}
+#gallery > #gallery-content > .gallery-links > a:last-child:hover {
+    background: #e62424;
+    color: #fff;
+    border: 2px solid #e62424;
+}
+#gallery > #gallery-img-container {
+    width: 100%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+}
+#gallery > #gallery-img-container > div {
+    width: 100%;
+    height: 400px; 
+}
+#gallery > #gallery-img-container > div > img {
+    width: 100%;
+    height: 400px;
+}
+
+@media screen and (max-width: 576px) {
+    #gallery > #gallery-img-container {
+        flex-direction: column;
+    }
+    #gallery > #gallery-content {
+        width: 90%;
+        margin: 0px auto;
+        padding: 10px;
+        text-align: center;
+        position: relative;
+        top: 0rem;
+    }
+    #gallery > #gallery-content > h3 {
+        font-size: 18px;
+        font-weight: bold;
+        color: #1F1F20;
+    }
+    #gallery > #gallery-content > p {
+        font-size: 15px;
+        font-weight: 600;
+        color: #1F1F20;
+    }
+    #gallery > #gallery-img-container > div {
+        width: 100%;
+        height: 350px; 
+    }
+    #gallery > #gallery-img-container > div > img {
+        width: 100%;
+        height: 350px;
+    }
+}

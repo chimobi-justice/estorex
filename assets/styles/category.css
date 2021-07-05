@@ -1,0 +1,107 @@
+#category {
+    padding: 8rem 0rem 5rem 0rem;
+}
+#category > h2 {
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 30px;
+    font-weight: bold;
+}
+#category > #cat-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 90%;
+    margin: 0px auto;
+}
+#category > #cat-wrapper > .cat-holder img{
+    width: 90%;
+    height: 280px;
+}
+#category > #cat-wrapper > .cat-holder img:hover{
+    box-shadow: 0px 2px 4px 0px #1F1F20; 
+    cursor: pointer;  
+}
+#category > #cat-wrapper > .cat-holder > .cat-content-holder {
+    width: 50%;
+    position: relative;
+    bottom: 15rem;
+    left: 9rem;
+}
+#category > #cat-wrapper > .cat-holder > .cat-content-holder > h3 {
+    margin: 0px 0px 5px 5px;
+}
+#category > #cat-wrapper > .cat-holder > .cat-content-holder > .btnDeals {
+    background: rgb(226, 170, 28);
+    color: #fff;
+    padding: 5px 0px 0px 20px;
+    border-radius: 15px;
+    border: 1px solid rgb(226, 170, 28);
+}
+#category > #cat-wrapper > .cat-holder > .cat-content-holder > .best-collection {
+    color: blue;
+    font-size: 20px;
+    margin: 0px 0px 5px 5px;
+}
+#category > #cat-wrapper > .cat-holder > .cat-content-holder > .Collection {
+    color: #000;
+}
+#category > #cat-wrapper > .cat-holder > .cat-content-holder > .discount{
+    color: blue;
+}
+
+@media screen and (max-width: 576px) {
+    #category {
+        padding: 1rem 0rem 1rem 0rem;
+    }
+    #category > #cat-wrapper {
+        flex-direction: column;
+    }
+    #category > #cat-wrapper > .cat-holder img{
+        width: 100%;
+        height: 280px;
+    }
+    #category > #cat-wrapper > .cat-holder > .cat-content-holder {
+        width: 50%;
+        position: relative;
+        bottom: 15rem;
+        left: 15rem;
+    }
+    #category > #cat-wrapper > .cat-holder > .cat-content-holder > .Collection {
+        color: blue;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    #category > #cat-wrapper > .cat-holder > .cat-content-holder {
+        width: 50%;
+        position: relative;
+        bottom: 15rem;
+        left: 11rem;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    #category > #cat-wrapper > .cat-holder > .cat-content-holder {
+        left: 10rem;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    #category > #cat-wrapper > .cat-holder > .cat-content-holder {
+        left: 9rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #category > #cat-wrapper > .cat-holder > .cat-content-holder {
+        left: 8rem;
+    }
+}
+
+
+@media screen and (max-width: 280px) {
+    #category > #cat-wrapper > .cat-holder > .cat-content-holder {
+        left: 7rem;
+    }
+}

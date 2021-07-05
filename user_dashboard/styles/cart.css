@@ -1,0 +1,196 @@
+#response {
+    width: 20%;
+    height: auto;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    right: 49%;
+    padding: 15px;
+    text-align: center;
+    background: #fff;
+    color: #000;
+    border-radius: 3px;
+    box-shadow: 2px 4px 8px 0px;
+}
+.flexBtn {
+    width: 80%;
+    margin: 10px auto;
+}
+.cancelCart {
+    padding: 7px;
+    background: #fff;
+    color: #000;
+    border-radius: 5px;
+    border: 1px solid rgb(116, 111, 111);
+    font-size: 14px;
+    outline: none; 
+    cursor: pointer;
+}
+.cancelCart:hover {
+    background: rgb(236, 230, 230);      
+}
+.removeCart {
+    padding: 7px;
+    background: red;
+    color: #fff;
+    border-radius: 5px;
+    border: 1px solid red;
+    font-size: 14px;
+    outline: none; 
+    cursor: pointer;
+}
+.removeCart:hover {
+    background: #e61b1b;   
+
+}
+#emptyCart-wrapper {
+    width: 90%;
+    margin: 3rem auto;
+}
+#emptyCart-wrapper  > .emptyCart-content {
+    padding-top: 6rem;
+
+}
+#emptyCart-wrapper  > .emptyCart-content h2, h3{
+    line-height: 1.5em;
+}
+#emptyCart-wrapper  > .emptyCart-content  #buttonHolder {
+    margin-top: 25px;
+}
+#emptyCart-wrapper  > .emptyCart-content  #buttonHolder a {
+    padding: 12px;
+    font-size: 16px;
+    background: #1F1F20;
+    color: #fff;
+    border: 1px solid #1F1F20;
+    border-radius: 3px;
+    text-decoration: none;
+}
+#emptyCart-wrapper  > .emptyCart-content > #buttonHolder > a:hover {
+    background: #313131;
+    border: 1px solid #313131;
+} 
+#cart-wrapper {
+    width: 90%;
+    margin: 6rem auto;
+}
+#cart-wrapper > .cart-title {
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+}
+#cart-wrapper > #cart-container {
+    width: 95%;
+    margin: 2rem auto;
+    border: 1px solid #1F1F20;
+    border-radius: 3px;
+}
+#cart-wrapper > #cart-container > div {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #1F1F20;
+}
+#cart-wrapper > #cart-container > div > p {
+    text-align: center;
+    width: 20%;
+    border: 1px solid #1F1F20;;
+    padding: 10px;
+}
+#cart-wrapper > #cart-container > div > p a {
+    text-decoration: none;
+    color: #E30606;
+}
+#cart-wrapper > #cart-container > div > p a:hover {
+    text-decoration: underline
+}
+.coupon {
+    display: flex;
+    justify-content: space-between;
+}
+.coupon > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.coupon > div form  {
+    width: 100%;
+}
+.coupon > div form > .form-group-container  {
+    display: inline;
+}
+.coupon > div form > .form-group-container > input[type="text"] {
+    width: 62%;
+    padding: 10px;
+    font-size: 1rem;
+}
+.coupon > div form > .form-group-container > input[type="submit"] {
+    width: 31%;
+    padding: 12px;
+    margin: 10px;
+    font-size: 14px;
+    background: #1F1F20;
+    color: #fff;
+    border: 1px solid #1F1F20;
+    border-radius: 3px;
+    cursor: pointer;
+} 
+.coupon > div form > .form-group-container > input[type="submit"]:hover {
+    background: #313131;
+    border: 1px solid #313131; 
+} 
+.coupon > div > div > p > span {
+    color: #008000;
+}
+.coupon > div  #buttonHolder > form >  button {
+    padding: 12px;
+    margin: 10px;
+    font-size: 14px;
+    background: #1F1F20;
+    color: #fff;
+    border: 1px solid #1F1F20;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.coupon > div  #buttonHolder > form > button:hover {
+    background: #313131;
+    border: 1px solid #313131;
+} 
+
+@media screen and (max-width: 576px) {
+    #response {
+        width: 62%;
+        height: auto;
+        position: absolute;
+        top: 31%;
+        left: 18%;
+        right: 50%;
+        padding: 15px;
+        text-align: center;
+        background: #fff;
+        color: #000;
+        border-radius: 3px;
+        box-shadow: 2px 4px 8px 0px;
+    }
+    #response > p {
+        font-size: 18px;
+    }
+    #cart-wrapper {
+        width: 95%;
+        height: auto;
+        overflow: auto;
+    }
+    #cart-wrapper > #cart-container {
+        width: 200%;
+        overflow-x: scroll;
+    }
+    #cart-wrapper > .cart-title {
+        font-size: 1.5rem;
+    }
+    .cancelCart {
+        font-size: 20px;
+    }
+    .removeCart {
+        font-size: 20px;
+    }
+}

@@ -9,31 +9,13 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .signin_container {
-    width: 90%;
+    width: 50%;
     margin: 0px auto;
     padding-top: 6rem;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
 }
-.signin_container > .signin_img_holder {
-    width: 50%;
-    height: 80vh;
-   
-}
-.signin_container > .signin_img_holder > #signin_content {
-    text-align: center;
-    padding: 10px;
-}
-.signin_container > .signin_img_holder > #signin_img_wrapper > img {
-    width: 80%;
-    margin: 25px 0px 0px 55px;
-    
-}
-
 .signin_container > #signin_contact_holder {
-    width: 55%;
-    height: 80vh;
+    width: 100%;
+    height: auto;
 }
 .signin_container > #signin_contact_holder > h1 {
     text-align: center;
@@ -52,14 +34,15 @@ body {
 .signin_container > #signin_contact_holder > #signin{
         width: 60%;
         margin: 0px auto;
-        margin-top: 6rem;
-        padding: 10px;
+        margin-top: 2rem;
+        padding: 20px;
+        border: 2px solid #1F1F20;
 }
 .signin_container > #signin_contact_holder > #signin > input{
     width: 100%;
-    padding: 15px;
-    margin-top: 5px;
-    margin-bottom: 10px;
+    padding: 10px;
+    margin: 5px 0px 5px 0px;
+    font-size: 1rem;
 }
 #emailFeedBack, #pswFeedBack {
     color: lightcoral;
@@ -70,19 +53,47 @@ body {
     padding: 10px;
     margin-bottom: 7px;
     font-size: 18px;
-    background: #90ee90;
-    border: 1px solid #90ee90;
+    background: #1F1F20;
+    color: #fff;
+    border: 1px solid #1F1F20;
+    border-radius: 3px;
     cursor: pointer;
     outline: none;
 }
 #signin_contact_holder > #signin > button:hover {
-    background: #008000;
-    color: #fff;
+    background: #1F1F20; 
 } 
-
+.signin-content {
+    text-align: center;
+    color: #1F1F20;
+}
+.signin-content > a {
+    text-decoration: underline;
+    color: #000;
+}
+.signin-content > a:hover {
+    text-decoration: none;
+}
 /* queries */
 @media screen and (max-width: 576px) {
     .signin_container {
-        flex-direction: column;
+        width: 90%;
+        margin: 0px auto;
+        padding-top: 5rem;
+    }
+    .signin_container > #signin_contact_holder > #signin{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .signin_container {
+        width: 98%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .signin_container {
+        width: 100%;
     }
 }

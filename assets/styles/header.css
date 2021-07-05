@@ -11,120 +11,234 @@ body {
     height: 100vh;
 }
 
-#navBar {
-    width: 100%;
-    height: 80px;
+.response {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: auto;
     padding: 10px;
-    background: #fff;
+    text-align: center;
+    font-size: 18px;
+    color: #000;
+    border-radius: 3px;
+}
+.success {
+    background: #d4edda;
+}
+.err {
+    background: #f8d7da;
+}
+.errors {
+    color: lightcoral;
+}
+
+#headerNavBar {
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: space-between;
-    border: 1px solid #ccc;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+} 
+#headerNavBar > .headerBrandWrapper {
+    display: flex;
+    justify-content: space-between;
+    background: #000;
+    padding: 5px;
+    width: 12.5%;
+    height: auto;
+    border-bottom-right-radius: 5px;
+
 }
-#navBar > .brand-holder {
-    padding: 20px 0px 0px 15px;
-}
-#navBar > .brand-holder > #brand-name {
-    text-decoration: none;
-    color: #000;
-    font-size: 20px;
-}
-#navBar > ul#midside-nav {
-    display: inline-flex;
-    padding-top: 10px;
-    margin-left: 9rem; 
-}
-#navBar > ul#midside-nav li {
-    list-style: none;
-    padding: 10px;
-    margin: 5px;
-}
-#navBar > ul#midside-nav li > a {
-    text-decoration: none;
-    color: #000;
-}
-#navBar > ul#midside-nav li > a:hover {
-    color: rgb(26, 26, 226);
-}
-#navBar > #rightside-nav {
-    padding: 10px 10px 0px 0px;
-}
-#navBar > #rightside-nav > a#cart {
-    border-radius: 50%;
-    border: 1px solid #000;
-    text-decoration: none;
-    color: #000;
-    padding: 10px;
-    margin: 5px;
-}
-#navBar > #rightside-nav > input#search {
-    padding: 10px;
-    border-radius: 25px;
-    outline: none; 
-}
-#navBar > #rightside-nav > button.btn {
-    padding: 12px;
-    background: blue;
+#headerNavBar > .headerBrandWrapper > .brand-holder {
+    background: #000;
     color: #fff;
-    border-radius: 25px;
-    border: 1px solid blue;
-    font-size: 16px;
-    outline: none; 
-    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.3rem;
 }
-#navBar > #rightside-nav > button.btn:hover {
-    background: rgb(26, 26, 226);
-}
-#navBar > #rightside-nav > button.signin {
-    background: #fff;
-    color: #000;
-    border: 1px solid #000;
-}
-#navBar > #rightside-nav > button.signin:hover {
+#headerNavBar > .headerBrandWrapper > .brand-holder a {
+    text-decoration: none;
+    background: #000;
     color: #fff;
 }
 
-/* hambuger */
-#hambuger {
-    display: none;
-    width: 100%;
-}
-#hambuger > div > div#icon_container > #menu_icon {
+#headerNavBar > .headerBrandWrapper > #menu_icon {
     display: block;
+    padding-top: 10px; 
+    cursor: pointer;
 }
-#hambuger > div > div#icon_container > #menu_icon > .icon {
+#headerNavBar > .headerBrandWrapper > #menu_icon > .icon {
     width: 30%;
     height: 0px;
     margin: 5px;
     padding-left: 25px;
-    border: 1px solid #000;
+    border: 1px solid #fff;
+} 
+
+#headerNavBar > ul {
+    display: inline-flex;
+    list-style: none;
+    align-items: center;
 }
-.close_menu_icon {
+#headerNavBar > ul input {
+    padding: 8px;
+    font-size: 16px;
+}
+#headerNavBar > ul li {
+    padding: 10px;
+}
+#headerNavBar > ul li a {
+    color: #000;
+}
+
+#hambuger {
+    display: none;
+}
+#mobile_menu {
+    display: block;
+}
+.mobile_icon {
+    width: 30%;
+    height: 0px;
+    margin: 5px;
+    padding-left: 25px;
+    border: 1px solid #fff;
+}
+.close_menu {
     display: none;
     color: #FFF;
-    font-size: 1.7em;
+    font-size: 1.9em;
     position: relative;
-    top: -5px;
+    top: -2px;
     right: 5px;
 }
 
-/* queries */
+#asideNav {
+    width: 12.5%;    
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    display: none;
+    background: #000;
+    color: #fff;
+    border-top: 1px solid #ccc;
+    position: absolute;
+    top: 56px;
+    left: 0;
+    z-index: 1;
+}
+#asideNav > ul {
+    padding: 15px;
+}
+#asideNav > ul > li {
+    list-style: none;
+    padding-top: 10px;
+}
+#asideNav > ul > li > a {
+    text-decoration: none;
+    color: #fff;
+    padding-top: 10px;
+}
+#asideNav > ul > li > a:hover {
+    text-decoration: underline;
+}
+
+.toggleNav {
+    display: block !important;
+}
+
+
 @media screen and (max-width: 576px) {
-    #navBar {
+    #headerNavBar {
         display: none;
     }
     #hambuger {
+        display: block;
         display: flex;
-        justify-content: space-between;
-        padding: 10px;
-        background: #fff;
+        justify-content: space-between;    
         width: 100%;
+        height: 60px;  
+        background: #000;
+        padding: 15px;
+        border-bottom: 1px solid #ccc;
+        position: fixed;
+        top: 0px;
+        z-index: 1;
     }
-    #hambuger > #brand_for_mobile_holder a{
+    #hambuger > div > h1 > a {
+        color: #fff;
         text-decoration: none;
-        color: #000;
-        font-size: 18px;
     }
-    #hambuger > div > #ham_wrapper_list {
+    #hambuger > div > #hambuger_wrapper_list {
         display: none;
+        width: 60%;
+        position: fixed;
+        text-align: left;
+        left: 0;
+        top: 56px;
+        padding: 15px;
+        height: 100vh;
+        background: #000;
+        z-index: 1;
+        animation-name: slide;
+        animation-duration: .2s;
+        animation-timing-function: linear ease-out;
+    }
+    @keyframes slide {
+        0%{
+            width: 0px;
+        }
+        60%{
+            width: 60px;
+        }
+    }
+    #hambuger > div > #hambuger_wrapper_list li > form input {
+        width: 100%;
+        padding: 10px;
+        font-size: 1rem
+    }
+    #hambuger > div > #hambuger_wrapper_list li {
+        list-style: none;
+        margin-top: 10px;
+    }
+    #hambuger > div > #hambuger_wrapper_list li > a{
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        padding: 10px;
+        margin: 5px;
+    }
+    #asideNav {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    #hambuger > div > #hambuger_wrapper_list {
+        width: 75%;
+    }
+    #hambuger > div > #hambuger_wrapper_list li {
+        list-style: none;
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #hambuger > div > #hambuger_wrapper_list {
+        width: 75%;
+    }
+    #hambuger > div > #hambuger_wrapper_list li {
+        list-style: none;
+        margin-top: 5px;
+    }
+    #hambuger > div > #hambuger_wrapper_list li > a{
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        padding: 8px;
+        margin: 5px;
     }
 }
